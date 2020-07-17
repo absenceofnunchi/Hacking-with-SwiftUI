@@ -2,9 +2,9 @@
 
 An iOS app built in SwiftUI to guess which country a flag belongs to. It demonstrates the use case of VStack, HStack, ZStack, LinearGradient, Alert, and States.
 
-<img src="https://github.com/igibliss00/Guess-the-Flag-Game-SwiftUI/blob/master/README_assets/2.png" width="400">
+<img src="https://github.com/igibliss00/Hacking-with-SwiftUI/Guess-the-Flag-Game-SwiftUI/blob/master/README_assets/2.png" width="400">
 
-<img src="https://github.com/igibliss00/Guess-the-Flag-Game-SwiftUI/blob/master/README_assets/3.png" width="400">
+<img src="https://github.com/igibliss00/Hacking-with-SwiftUI/Guess-the-Flag-Game-SwiftUI/blob/master/README_assets/3.png" width="400">
 
 
 ## Features
