@@ -1,5 +1,7 @@
 # Animations
 
+Various SwiftUI animations.
+
 ## Features
 
 ### Animating Views
@@ -71,9 +73,11 @@ var body: some View {
     // some code
    }
 }
+```
 
 ### Explicit Animations
 
+```
 struct ContentView: View {
     @State private var animationAmount = 0.0
     
@@ -90,6 +94,7 @@ struct ContentView: View {
         .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
     }
 }
+```
 
 ### Controlling The Animation Stack
 
