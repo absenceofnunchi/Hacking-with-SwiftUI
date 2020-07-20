@@ -8,6 +8,21 @@
 
 import SwiftUI
 
+struct CornerRotateModifier: ViewModifier {
+    var amount: Double
+    var anchor: UnitPoint
+    
+    func body(content: Content) -> some View {
+        content.rotationEffect(.degrees(amount), anchor: anchor).clipped()
+    }
+}
+
+extension AnyTransition {
+    static var pivot: AnyTransition {
+        .modifier(active: CornerRotateModifier(amount: -90, anchor: .topLeading), identity: CornerRotateModifier(amount: 0, anchor: .topLeading))
+    }
+}
+
 struct ContentView: View {
     let letters = Array("Hello")
     @State private var animationAmount: CGFloat = 0.7
@@ -16,9 +31,42 @@ struct ContentView: View {
     @State private var animationValue = false
     @State private var enabled = false
     @State private var dragAmount = CGSize.zero
+    @State private var isShowingRed = false
     
     var body: some View {
+        // Custom Transitions Using ViewModifier
         VStack(spacing: 10) {
+            
+            VStack {
+                Button("Tap Me") {
+                    withAnimation {
+                        self.isShowingRed.toggle()
+                    }
+                }
+                
+                if isShowingRed {
+                    Rectangle()
+                        .fill(Color.red)
+                        .frame(width: 100, height: 100)
+                        .transition(.pivot)
+                }
+            }
+            
+            // View Transition
+            VStack {
+                Button("Tap Me") {
+                    withAnimation {
+                        self.isShowingRed.toggle()
+                    }
+                }
+                
+                if isShowingRed {
+                    Rectangle()
+                        .fill(Color.red)
+                        .frame(width: 100, height: 100)
+                        .transition(.asymmetric(insertion: .opacity, removal: .scale))
+                }
+            }
             VStack {
                 // Gesture Animation
                 LinearGradient(gradient: Gradient(colors: [.yellow, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -125,4 +173,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
