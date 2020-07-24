@@ -1,5 +1,7 @@
 # Cupcake Corner
 
+An iOS app in SwiftUI that inputs the cupcake order and an address and sends an HTTP request.
+
 <img src="https://github.com/igibliss00/Hacking-with-SwiftUI/blob/master/CupcakeCorner/README_assets/1.png" width="400">
 
 <img src="https://github.com/igibliss00/Hacking-with-SwiftUI/blob/master/CupcakeCorner/README_assets/2.png" width="400">
