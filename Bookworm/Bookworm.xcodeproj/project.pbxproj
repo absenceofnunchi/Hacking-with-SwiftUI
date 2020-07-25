@@ -18,6 +18,7 @@
 		49566E6D24CC91A100F89554 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49566E6C24CC91A100F89554 /* RatingView.swift */; };
 		49566E6F24CC9D9000F89554 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49566E6E24CC9D9000F89554 /* EmojiRatingView.swift */; };
 		49566E7124CCA96300F89554 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49566E7024CCA96300F89554 /* DetailView.swift */; };
+		49566E7324CCEB4900F89554 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49566E7224CCEB4900F89554 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		49566E6C24CC91A100F89554 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		49566E6E24CC9D9000F89554 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		49566E7024CCA96300F89554 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		49566E7224CCEB4900F89554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		49428D7A24CB82B300E0318A = {
 			isa = PBXGroup;
 			children = (
+				49566E7224CCEB4900F89554 /* README.md */,
 				49428D8524CB82B300E0318A /* Bookworm */,
 				49428D8424CB82B300E0318A /* Products */,
 			);
@@ -150,6 +153,7 @@
 			files = (
 				49428D9624CB82BB00E0318A /* LaunchScreen.storyboard in Resources */,
 				49428D9324CB82BB00E0318A /* Preview Assets.xcassets in Resources */,
+				49566E7324CCEB4900F89554 /* README.md in Resources */,
 				49428D9024CB82BB00E0318A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
