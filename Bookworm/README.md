@@ -1,5 +1,7 @@
 # Bookworm
 
+An iOS app with SwiftUI that keeps track of the books you've read.
+
 <img src="https://github.com/igibliss00/Hacking-with-SwiftUI/blob/master/Bookworm/README_assets/1.png" width="400">
 
 <img src="https://github.com/igibliss00/Hacking-with-SwiftUI/blob/master/Bookworm/README_assets/2.png" width="400">
