@@ -118,3 +118,48 @@ These achieve the following.
 - It makes the class conform to the UINavigationControllerDelegate protocol, which lets us detect when the user moves between screens in the image picker.
 
 
+#### Conditional View
+
+The following code gets an error saying “Closure containing control flow statement cannot be used with function builder ViewBuilder”:
+
+```
+ZStack {
+    Rectangle()
+        .fill(Color.secondary)
+    
+    if let image = image {
+        image?
+            .resizable()
+            .scaledToFit()
+    } else {
+        Text("Tap to select a picture")
+            .foregroundColor(.white)
+            .font(.headline)
+    }
+}
+```
+
+The reason stated from [Hacking with Swift](https://www.hackingwithswift.com/books/ios-swiftui/building-our-basic-ui): 
+
+> What Swift is trying to say is it has support for only a small amount of logic inside SwiftUI layouts – we can use if someCondition, but we can’t use if let, for, while, switch, and so on. 
+
+> What’s actually happening here is that Swift is able to convert if someCondition into a special internal view type called ConditionalContent: it stores the condition and the true and false views, and can check it at runtime. However, if let creates a constant, and switch can have any number of cases, so neither can be used.
+
+Can be fixed with the following code:
+
+```
+ZStack {
+    Rectangle()
+        .fill(Color.secondary)
+    
+    if image != nil {
+        image?
+            .resizable()
+            .scaledToFit()
+    } else {
+        Text("Tap to select a picture")
+            .foregroundColor(.white)
+            .font(.headline)
+    }
+}
+```

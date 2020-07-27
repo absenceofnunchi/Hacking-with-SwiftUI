@@ -14,6 +14,8 @@
 		495837CA24CE1D5F0011A5C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495837C924CE1D5F0011A5C2 /* Preview Assets.xcassets */; };
 		495837CD24CE1D5F0011A5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495837CB24CE1D5F0011A5C2 /* LaunchScreen.storyboard */; };
 		495837D524CE73A40011A5C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 495837D424CE73A40011A5C2 /* README.md */; };
+		498F627224CF5CE400ECC604 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F627124CF5CE400ECC604 /* ImagePicker.swift */; };
+		498F627424CF9D4600ECC604 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F627324CF9D4600ECC604 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		495837CC24CE1D5F0011A5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495837CE24CE1D5F0011A5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495837D424CE73A40011A5C2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		498F627124CF5CE400ECC604 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		498F627324CF9D4600ECC604 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				495837C024CE1D590011A5C2 /* AppDelegate.swift */,
 				495837C224CE1D590011A5C2 /* SceneDelegate.swift */,
 				495837C424CE1D590011A5C2 /* ContentView.swift */,
+				498F627124CF5CE400ECC604 /* ImagePicker.swift */,
+				498F627324CF9D4600ECC604 /* ImageSaver.swift */,
 				495837C624CE1D5F0011A5C2 /* Assets.xcassets */,
 				495837CB24CE1D5F0011A5C2 /* LaunchScreen.storyboard */,
 				495837CE24CE1D5F0011A5C2 /* Info.plist */,
@@ -151,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				495837C124CE1D590011A5C2 /* AppDelegate.swift in Sources */,
+				498F627224CF5CE400ECC604 /* ImagePicker.swift in Sources */,
+				498F627424CF9D4600ECC604 /* ImageSaver.swift in Sources */,
 				495837C324CE1D590011A5C2 /* SceneDelegate.swift in Sources */,
 				495837C524CE1D590011A5C2 /* ContentView.swift in Sources */,
 			);
